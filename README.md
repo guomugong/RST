@@ -17,7 +17,7 @@ python3 train_seg.py > log_seg_drive 2>&1
 After training, the model checkpoints will be saved in the `snapshot/` directory.
 
 ### 📦 Pretrained Models
-We also provide several pre-trained checkpoints for DRIVE dataset in the 'snapshot' folder.
+We also provide several pre-trained checkpoints for DRIVE dataset in the `snapshot/` folder.
 
 ## 🔍 Testing
 Once the training is complete, you can test the model on a different dataset using the following command:
@@ -33,3 +33,5 @@ python3 predict_seg.py drive chase
 ```bash
 python3 predict_seg.py drive rc-slo
 ```
+
+If everything ok, you will get F1-scores of 79.7%, 68.4% and 76.5% on the STARE, CHASE_DB1 and RC-SLO datasets, respectively.
